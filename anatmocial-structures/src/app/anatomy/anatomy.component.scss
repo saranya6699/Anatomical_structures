@@ -1,0 +1,22 @@
+.grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;  
+   .list{
+    width: 60%;
+    margin: 1rem;
+    flex-wrap: wrap;
+    overflow: visible !important;
+    .name{
+        border: 1px solid black;
+        border-radius: 2px;
+        margin: 0.1rem;
+        padding: 0.2rem;
+    }
+    .id{
+        border: 1px solid black;
+        border-radius: 2px;
+        margin: 0.1rem;
+        width: 50%;
+        padding: 0.2rem;
+    }}
+}

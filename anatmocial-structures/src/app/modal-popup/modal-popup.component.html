@@ -1,0 +1,27 @@
+<ng-template [ngIf]="!data.error" [ngIfElse]="error">
+
+    <div mat-dialog-title class="title">
+        <h2>{{data.label}}</h2>
+        <button mat-icon-button aria-label="close dialog" mat-dialog-close>
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+
+    <div mat-dialog-content>
+        <h3 mat-label>Description</h3>
+        <p>{{data.definition}}</p>
+        <h3 mat-label>Ontology Link</h3>
+        <p>{{data.obo_id}}</p>
+        <h3 mat-label>IRI</h3>
+        <p>{{data.iri}}</p>
+    </div>
+</ng-template>
+
+<ng-template #error>
+    <div mat-dialog-title class="title">
+        <h2>{{data.message}}</h2>
+        <button mat-icon-button aria-label="close dialog" mat-dialog-close>
+            <mat-icon>close</mat-icon>
+        </button>
+    </div>
+</ng-template>

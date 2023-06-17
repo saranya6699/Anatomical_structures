@@ -1,0 +1,17 @@
+{
+    "hosting": {
+      "public": "public",
+      "site": "anatomical-structures",
+      "ignore": [
+        "firebase.json",
+        "*/.",
+        "*/node_modules/*"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  }
